@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body {
+  background: black;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
+}
+
+header {
+  /*REGRA PRA FORMATAR TEXTOS EM LINHA COMO BLOCOS:*/
+  text-align: center;
+  padding: 24px;
+}
+
+header img {
+  width: 200px;
+  /* CASO NÃO OUVESSE A REGRA ANTERIOR EU PODERIA FORMATAR ASSIM:
+    display: block;
+    margin: auto; */
+}
+
+header p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+  color: white;
+}
+
+/* links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+.programacao-box {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0);
+  border-radius: 8px;
+
+  z-index: 999999;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
+.programacao-box h2 {
+  margin: 50px;
+  color: white;
+}
+
+.programacao-box h4 {
+  color: white;
+}
+
+.programacao-box ul {
+  color: white;
+  padding: 0;
+  margin: 15px;
+}
+
+.fechar-programacao {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+
+  padding: 16px 24px;
+}
+
+#social-links {
+  display: flex;
+  padding: 24px 0;
+  font-size: 24px;
+  justify-content: center;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  color: white;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
