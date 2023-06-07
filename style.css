@@ -10,9 +10,8 @@ body * {
 }
 
 body {
-  background-image: url(assets/background.png);
-  background-size: cover;
-  background-position: center;
+  background: url(assets/background.png) no-repeat top center/cover;
+  height: 100vh;
 }
 
 #container {
@@ -95,7 +94,7 @@ ul li a:hover {
 }
 
 .programacao-box h2 {
-  margin: 50px;
+  margin: 200px 0 50px 0;
   color: white;
 }
 
