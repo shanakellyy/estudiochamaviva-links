@@ -48,14 +48,36 @@
               <button class="fechar-programacao">Fechar</button>
             </div>
           </li>
+
           <li>
-            <a href="#">Contato</a>
+            <a href="#" class="contato-link">Contato</a>
+            <div class="contato-box">
+              <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+
+                <input type="submit" value="Enviar" />
+                <button class="fechar-contato">Fechar</button>
+              </form>
+            </div>
           </li>
         </ul>
 
         <div id="social-links">
           <a href="https://www.facebook.com/estudiochamaviva/" target="_blank">
             <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a
+            href="https://www.youtube.com/@estudiochamaviva1967"
+            target="_blank"
+          >
+            <ion-icon name="logo-youtube"></ion-icon>
           </a>
           <a href="https://www.instagram.com/estudiochamaviva/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
